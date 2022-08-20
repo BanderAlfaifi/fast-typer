@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lateef&display=swap");
+
+body {
+  background-color: var(--background-color);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.typed-text .blinking-curser {
+  color: var(--primary-color);
+  animation: blick 1.2s step-start infinite;
+}
+
+.container {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.container p {
+  font-family: "Lateef", cursive;
+  font-family: "Cutive Mono", monospace;
+  color: var(--text-color);
+  font-size: 30px;
+  word-wrap: normal;
+  word-break: break-all;
+}
+
+.container span {
+  position: relative;
+}
+
+.container p .active {
+  color: var(--letter-to-be-written-color);
+}
+
+.container p .active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--primary-color);
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+.correct {
+  color: var(--correct-color);
+}
+
+.false {
+  background-color: var(--mistake-color);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.hedden-input {
+  opacity: 0;
+}
+
+.countdown {
+  font-family: "Cutive Mono", monospace;
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+/* result box style */
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  font-family: "Cutive Mono", monospace;
+  border: 1px solid var(--correct-color);
+  color: var(--text-color);
+  padding: 25px;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.result .result-number {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+/* Header style */
+
+.header {
+  margin-bottom: 100px;
+}
+
+.header h1 {
+  color: var(--secondry-color);
+  font-family: "Cutive Mono", monospace;
+  font-size: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header p {
+  font-family: "Cutive Mono", monospace;
+  color: var(--text-color);
+  font-size: 25px;
+}
+
+.header h1 span {
+  color: var(--primary-color);
+}
+
+/* Footer style */
+
+.shortcut-restart {
+  font-family: "Cutive Mono", monospace;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.footer {
+  font-family: "Cutive Mono", monospace;
+  margin-top: 200px;
+  color: var(--text-color);
+}
+
+.footer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+.style-choosing {
+  margin-top: 100px;
+  margin-bottom: -150px;
+}
+
+.style-choosing button {
+  font-family: "Cutive Mono", monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 0;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.style-choosing button:hover {
+  background-color: var(--primary-color);
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+}

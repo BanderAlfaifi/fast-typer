@@ -1,0 +1,9 @@
+:root {
+  --background-color: #100b11;
+  --primary-color: #d11686;
+  --secondry-color: #fff;
+  --mistake-color: #952033;
+  --correct-color: rgb(123, 167, 37);
+  --text-color: rgb(184, 183, 183);
+  --letter-to-be-written-color: #5b4c4d;
+}
