@@ -1,2 +1,2 @@
 # fast-typer
-Created with CodeSandbox
+Test your typing speed easy and fast! Built With React JS
