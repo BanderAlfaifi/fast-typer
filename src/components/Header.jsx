@@ -5,7 +5,7 @@ const Header = () => {
     <div className="header">
       <h1>
         {" "}
-        fast <span>typer</span>{" "}
+        fast <span>typier</span>{" "}
       </h1>
       <p> Test your typing speed easy and fast! </p>
     </div>
